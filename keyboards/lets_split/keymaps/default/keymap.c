@@ -90,28 +90,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12( \
-  KC_TILD,     KC_EXLM,     KC_AT,       KC_HASH,     KC_DLR,         KC_PERC,        KC_CIRC,     KC_AMPR,     KC_ASTR,     KC_LPRN,     KC_RPRN,          KC_HOME,  \
-  LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5),     LALT(KC_6),     RALT(KC_C),  RALT(KC_S),  RALT(KC_Q),  RALT(KC_Y),  RALT(KC_SCLN),  KC_PGUP,  \
-  LALT(KC_7),  LALT(KC_8),  LALT(KC_9),  LALT(KC_0),  LALT(KC_LBRC),  LALT(KC_RBRC),  KC_PIPE,     KC_UNDS,     KC_PLUS,     KC_LCBR,     KC_RCBR,          KC_PGDN,  \
-  RALT(KC_E),  RALT(KC_V),  RALT(KC_Z),  _______,     _______,        _______,        _______,     _______,     RALT(KC_X),  RALT(KC_R),  RALT(KC_T),       KC_END    \
+  KC_TILD,     KC_EXLM,     KC_AT,       KC_HASH,     KC_DLR,         KC_PERC,        KC_CIRC,     KC_AMPR,     KC_ASTR,     KC_LPRN,     KC_RPRN,        KC_MPLY,    \
+  LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5),     LALT(KC_6),     RALT(KC_C),  RALT(KC_S),  RALT(KC_Q),  RALT(KC_Y),  RALT(KC_SCLN),  KC_VOLU,    \
+  LALT(KC_7),  LALT(KC_8),  LALT(KC_9),  LALT(KC_0),  LALT(KC_LBRC),  LALT(KC_RBRC),  KC_PIPE,     KC_UNDS,     KC_PLUS,     KC_LCBR,     KC_RCBR,        KC_VOLD,    \
+  RALT(KC_E),  RALT(KC_V),  RALT(KC_Z),  _______,     _______,        _______,        _______,     _______,     RALT(KC_X),  RALT(KC_R),  RALT(KC_T),     KC_MNXT     \
 ),
 
 /* Raise
  * ,-----------------------------------------|-----------------------------------------.
  * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Play |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |      | ArrL | ArrD | ArrU | ArrR | Vol+ |
+ * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  | ArrL | ArrD | ArrU | ArrR |   \  | Vol+ |
  * |------+------+------+------+------|------|------+------+------+------+------+------|
- * |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |  \   |  -   |   =  |   [  |   ]  | Vol+ |
+ * |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |      |  -   |   =  |   [  |   ]  | Vol+ |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |MouseL|MouseD|MouseU|MouseR|      |             |      |Mouse1|Mouse3|Mouse2| Play |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_ortho_4x12( \
-  KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,    KC_5,    KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MPLY, \
-  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,   KC_F6,   _______,   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_VOLU, \
-  KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,  KC_F12,  KC_BSLS,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,  KC_VOLD, \
-  KC_MS_L,  KC_MS_D,  KC_MS_U,  KC_MS_R,  _______,  _______,  _______,   _______,   KC_BTN1,  KC_BTN3,  KC_BTN2,  KC_MNXT \
+  KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_HOME,  \
+  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_BSLS,  KC_PGUP,  \
+  KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,  KC_PGDN,  \
+  KC_MS_L,  KC_MS_D,  KC_MS_U,  KC_MS_R,  _______,  _______,  _______,  _______,  KC_BTN1,  KC_BTN3,  KC_BTN2,  KC_END    \
 ),
 
 /* Adjust (Lower + Raise)
